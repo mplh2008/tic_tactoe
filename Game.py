@@ -53,6 +53,8 @@ class Game(object):
             print()
 
 
+    # def play_round()
+
     def play_game(self):
         """
         Takes moves from raw_input as comma-separated list in form (column, row, player)
@@ -65,25 +67,23 @@ class Game(object):
         player1Turn = True
         plays = 0
         while(winner is None and plays < 9):
-            # To do: clean the string better
             self.print_board()
+
+            # To do: clean the string better
             inputArr = input("Player {}'s Turn, please enter (column, row):".format(1 if player1Turn else 2)).split(',')
             column = int(inputArr[0])
             row = int(inputArr[1])
-            if (column > 2 or column < 0) or (row > 2 or row < 0):
-                print("Position not in bounds! Enter again.")
-                continue
-            if self.board[row][column] is None:
+
+            try:
                 if(player1Turn):
                     self.mark_square(column, row, self.player1)
                 else:
                     self.mark_square(column, row, self.player2)
                 plays += 1
                 player1Turn = not player1Turn
-            else:
-                print(type(self.board[row][column]))
-                print("Square already filled! Enter again.")
-                continue
+            except Exception as e:
+                raise Exception("Invalid Input: {}".format(e))
+
             winner = self.has_winner()
         return winner
    

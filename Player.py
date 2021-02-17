@@ -5,10 +5,10 @@ class Player():
     def make_move(self, board, row, col):
         # check if valid
         if(row < 0 or row > 2):
-            print("Outside row bounds!")
+            raise RuntimeError("Outside row bounds!")
         if(col < 0 or col > 2):
-            print("Outside col bounds!")
+            raise RuntimeError("Outside col bounds!")
         if(board[row][col] is not None):
-            print("Illegal Move! Position already marked with {}".format(board[row][col]))
+            raise RuntimeError("Illegal Move! Position already marked with {}".format(board[row][col]))
 
         board[row][col] = self.playerId
