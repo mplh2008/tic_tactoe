@@ -1,0 +1,7 @@
+Our test plan was to unit test the different classes and then test the integration between the classes.
+
+First, we ran unit tests on the game class functions to see if they were working. Same for the player class.
+
+Then, we tested out the game class functions that used the Player class along with testing the play_game function which used other game functions that relied on the player class. 
+
+Thankfully, we were able to do so and pass all the tests.
