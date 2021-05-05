@@ -1,7 +1,7 @@
-FROM python:3.9.2
+FROM python:3.9.4
 
 ADD src src
-ADD main.py .
+ADD tictactoe.py .
 
 RUN pip install coverage
 
