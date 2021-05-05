@@ -32,7 +32,7 @@ jobs:
         pip install coverage
     - name: Test with unittest
       run: |
-        coverage run -m tictactoe_unit_test discover
+        coverage run -m tictactoe_unit_test
         coverage report
   test:
     name: Run tests
