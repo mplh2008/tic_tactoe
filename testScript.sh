@@ -1,2 +1,2 @@
 #!/bin/sh
-python tictactoe_integration_test.py
+tictactoe_integration_test.py
