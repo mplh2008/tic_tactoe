@@ -1,4 +1,4 @@
-$ docker build -t mplh2008/tictactoe .
+$ docker build -t mplh2008/tic_tactoe .
 Sending build context to Docker daemon 8.704 kB
 Step 1 : FROM python:3
 # Executing 3 build triggers...
