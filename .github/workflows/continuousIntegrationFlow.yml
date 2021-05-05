@@ -34,6 +34,6 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Test
-      uses: skx/github-action-tester@master
+      uses: mplh2008/tic_tactoe@master
       with:
         script: .github/testScript.sh
