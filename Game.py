@@ -54,7 +54,7 @@ class Game(object):
 
 
     # def play_round()
-
+    pragma: no cover
     def play_game(self):
         """
         Takes moves from raw_input as comma-separated list in form (column, row, player)
