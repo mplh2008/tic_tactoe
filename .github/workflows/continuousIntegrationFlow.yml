@@ -63,6 +63,6 @@ jobs:
         with:
           username: mplh2008
           password: Caroline192!
-          repository: mplh2008/tic_tactoe:tagname
+          repository: mplh2008/tic_tactoe
           
           tag_with_ref: true
