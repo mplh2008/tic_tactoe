@@ -54,8 +54,8 @@ class Game(object):
 
 
     # def play_round()
-    # pragma: no cover
-    def play_game(self):
+    
+    def play_game(self): # pragma: no cover
         """
         Takes moves from raw_input as comma-separated list in form (column, row, player)
             and makes a move. When a winner has been determined, the game ends
