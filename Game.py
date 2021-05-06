@@ -46,7 +46,7 @@ class Game(object):
 
         return None
 
-    def print_board(self):
+    def print_board(self):  # pragma: no cover
         for row in range(3):
             for col in range(3):
                 print(self.board[row][col], end=" ")
