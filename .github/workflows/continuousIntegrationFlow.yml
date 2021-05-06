@@ -35,7 +35,7 @@ jobs:
         coverage run -m tictactoe_unit_test
         coverage report
   test:
-    name: Run tests
+    name: Run Integration Tests
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
