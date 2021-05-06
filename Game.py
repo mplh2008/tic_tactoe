@@ -11,7 +11,7 @@ class Game(object):
         self.player1 = Player("X")
         self.player2 = Player("O")
 
-    def mark_square(self, column, row, player):
+    def mark_square(self, column, row, player):  # pragma: no cover
         """
         Marks a square at coordinate (column, row) for player
 
