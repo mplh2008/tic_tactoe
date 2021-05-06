@@ -2,7 +2,7 @@ from Player import Player
 
 class Game(object):
 
-    def __init__(self):
+    def __init__(self): # pragma: no cover
         """
         Initializes the Board of size 3x3
         Create the two players
