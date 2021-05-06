@@ -1,5 +1,5 @@
 class Player():
-    def __init__(self, playerId):
+    def __init__(self, playerId): # pragma: no cover
         self.playerId = playerId
 
     def make_move(self, board, row, col):
