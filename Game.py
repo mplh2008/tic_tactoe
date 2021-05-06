@@ -2,7 +2,7 @@ from Player import Player
 
 class Game(object):
 
-    def __init__(self): # pragma: no cover
+    def __init__(self):
         """
         Initializes the Board of size 3x3
         Create the two players
@@ -11,7 +11,7 @@ class Game(object):
         self.player1 = Player("X")
         self.player2 = Player("O")
 
-    def mark_square(self, column, row, player):  # pragma: no cover
+    def mark_square(self, column, row, player):
         """
         Marks a square at coordinate (column, row) for player
 
@@ -46,7 +46,7 @@ class Game(object):
 
         return None
 
-    def print_board(self): # pragma: no cover
+    def print_board(self):
         for row in range(3):
             for col in range(3):
                 print(self.board[row][col], end=" ")
@@ -55,7 +55,7 @@ class Game(object):
 
     # def play_round()
     
-    def play_game(self):
+    def play_game(self): # pragma: no cover
         """
         Takes moves from raw_input as comma-separated list in form (column, row, player)
             and makes a move. When a winner has been determined, the game ends
